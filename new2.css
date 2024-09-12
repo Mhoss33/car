@@ -1,0 +1,587 @@
+*{
+margin: 0;
+color: black;
+font-family: 'Poppins';
+box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+.navbar{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+h1{
+    animation: h1 0.5s linear 1;
+}
+@keyframes h1{
+    from{
+        opacity: 0;
+        transform: translate(-100px , 0px);
+    }
+    to{opacity: 1;}
+}
+.list{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 48px;
+    align-items: center;
+}
+.home{
+    color: #3685FB;
+    font-weight: bold;
+    animation-name: ko;
+    animation-delay: 200ms;
+    animation-duration:400ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    cursor: pointer;
+}
+.About{
+    cursor: pointer;
+    opacity: 0;
+    animation-name: ko;
+    animation-delay: 400ms;
+    animation-duration:  400ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.About:hover{
+    color: #3685FB;   
+    text-shadow: 1px 1px 1px black;
+}
+.Reveiw{
+    cursor: pointer;
+    animation-name: ko;
+    animation-delay: 600ms;
+    animation-duration:  400ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.Reveiw:hover{
+    color: #3685FB;
+    text-shadow: 1px 1px 1px black;
+}
+.Featured{cursor: pointer;
+    animation-name: ko;
+    animation-delay:800ms;
+    animation-duration: 400ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.Featured:hover{
+    color: #3685FB;
+    text-shadow: 1px 1px 1px black;
+}
+.Contact{cursor: pointer;
+    animation-name: ko;
+    animation-delay: 1000ms;
+    animation-duration: 400ms;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+.Contact:hover{
+    color: #3685FB;
+    text-shadow: 1px 1px 1px black;
+}
+@keyframes ko{
+    from{
+    transform: translate(0 , 70px);
+    }
+    to{
+    opacity: 1;
+    }
+}
+.sociallist{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 48px;
+    align-items: center;
+}
+.icon1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px ;
+    Height :40px ;
+    animation-name: ic;
+    animation-duration: 0.2s;
+    animation-delay:0.2s ;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.icon1:hover{
+    box-shadow: 1px 1px 20px black; 
+}
+.icon2{  display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px ;
+    Height :40px ;
+    animation-name: ic;
+    animation-duration: 0.2s;
+    animation-delay:0.4s ;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.icon2:hover{
+    box-shadow: 1px 1px 20px black; 
+}
+.icon3{  display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 40px ;
+    Height :40px ;
+    animation-name: ic;
+    animation-duration: 0.2s;
+    animation-delay:0.6s ;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    cursor: pointer;
+}
+.icon3:hover{
+    box-shadow: 1px 1px 20px black; 
+}
+@keyframes ic{
+    from{
+        opacity: 0;
+        transform: translate(100px , 0px);
+    }
+    to{opacity: 1;}
+}
+
+
+
+
+
+
+
+.con{
+    display: flex;
+    flex-wrap: wrap;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-top:300px ;
+    margin-left: 200px;
+    flex-wrap: wrap;
+
+}
+h2{
+    font-size: 50px;
+    animation-name: mohab;
+    animation-duration: 0.25s;
+    animation-delay:0.25s ;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes mohab {
+    from{
+        opacity: 0;
+        transform: translate(0px ,-50px );
+    }
+    to{
+        opacity: 1;
+    }
+}
+h3{
+    font-size: 30px;
+    color: #3685FB;
+    margin-bottom:10px ;
+    animation-name: pergo;
+    animation-duration: 0.5s;
+    animation-delay:0.5s ;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes pergo {
+    from{
+        opacity: 0;
+        transform: translate(-100px ,0 );
+    }
+    to{
+        opacity: 1;
+    }
+}
+p{
+    margin-bottom:20px ;
+    animation-name: prg;
+    animation-duration: 0.75s;
+    animation-delay:0.75s ;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes prg {
+    from{
+        opacity: 0;
+        transform: translate(100px ,0 );
+    }
+    to{
+        opacity: 1;
+    }
+}
+button{
+    background-color: #3685FB;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    color: aliceblue;
+    animation-name: btn;
+    animation-duration: 1s;
+    animation-delay:1s ;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+button:hover{box-shadow: 1px 1px 10px black;}        
+
+@keyframes btn {
+    from{
+        opacity: 0;
+        transform: translate(0 , 50px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+.animation{
+display: flex;
+position: relative;
+z-index: -1;
+}
+.car{
+    perspective: 900px;
+    position: relative;
+}
+img{
+    width: 700px;
+    flex-shrink: 1;
+    margin-top:250px ;
+    margin-left:100px ;
+    animation-name:dd ;
+    animation-delay: 1300ms;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-iteration-count: 1;
+    transform: translate3d(10px,0,180px);
+
+}
+@keyframes dd{
+    0%{
+        transform: translate3d(2500px,600px,-5000px);
+        opacity: 0;
+    }
+    25%{
+        
+        opacity: 0.25;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 1;
+        transform: translate3d(10px,0,180px);
+
+    }
+
+}
+.morr{
+    perspective: 500px;
+    position: absolute;
+    top: 150px;
+    right: 0;
+    width:600px;
+    height:600px;
+    border: 30px solid #3685FB;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 10px black;
+    animation-name: aa;
+    animation-duration: 0.6s;
+    animation-delay: 0.7s;
+    animation-iteration-count: 1;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    transform:rotate(45deg) scale(0.9);
+    z-index: -1;
+}
+@keyframes aa{
+    from{
+        opacity: 0;
+        transform: rotate(45deg) scale(1);
+    }
+    to{ opacity: 1;
+        transform:rotate(45deg) scale(0.9);
+}
+}
+.baz{
+    width: 600px;
+    height: 900px;
+    rotate: 314deg;
+    background-color: #3685FB;
+    position: absolute;
+    top: -35%;
+    right: -320px;
+    z-index: -2;
+    animation-name: boz;
+    animation-duration: 0.6s;
+    animation-iteration-count: 1;
+}
+@keyframes boz{
+    from{
+       opacity: 0;
+       transform: translate(300px ,10px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+@media (max-width:600px){
+    body{
+        overflow: hidden;
+    }
+    .navbar{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .list{
+        margin:auto;
+        gap: 20px;
+    }
+    .home{
+        text-shadow: 1px 1px 1px black;
+    }
+    .con{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hero{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        margin-left: 20px;
+        
+    }
+    h2{
+        margin-top: 100px;
+        font-size: 30px;
+    }
+    h3{
+        font-size: 20px; 
+        text-shadow: 1px 1px 20px black;
+
+    }
+    p{display: flex;
+        font-size: 15px;
+        width:390px;
+        flex-flow: row wrap;
+    }
+    button{
+        background-color: #3685FB;
+        width: 100px;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        font-size: 10px;
+        box-shadow: 1px 1px 20px black;
+    }
+    .animation{
+        display: flex;
+        overflow: hidden;
+    }
+    .morr{
+        display: flex;
+        flex-wrap: wrap;
+        perspective: 500px;
+        position: absolute;
+        transform: rotate(45deg) translate3d(0,0,0);
+        top: 500px;
+        right: 75px;
+        width:300px;
+        height:300px;
+        border: 30px solid #3685FB;
+        background-color: aliceblue;
+        box-shadow: 1px 1px 10px black;
+    }
+    img{width: 300px;
+        margin-top:140px ;
+        margin-left:50px ;
+
+    }
+    .icon1{
+        box-shadow: 1px 1px 20px black;
+        border-radius: 20px;
+        background-color: #3685FB;
+    }
+    .icon2{
+        box-shadow: 1px 1px 20px black;
+        border-radius: 20px;
+        background-color: #3685FB;
+    }
+    .icon3{
+        box-shadow: 1px 1px 20px black;
+        border-radius: 20px;
+        background-color: #3685FB;
+    }
+    .baz{
+        overflow: hidden;
+        width: 405px;
+        height:490px;
+ 
+        top: -100px;
+        left: -5px;
+        rotate: 135deg;
+    }
+ 
+}
+
+
+
+
+@media (min-width:601px) and (max-width:768px){
+    body{
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .navbar{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 15px;
+    }
+    .list{
+        margin:auto;
+        gap: 20px;
+    }
+    .home{
+        text-shadow: 1px 1px 1px black;
+    }
+    .con{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hero{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        margin-left: 15px;
+        
+    }
+    h2{
+        margin-top: 80px;
+        font-size: 30px;
+    }
+    h3{
+        font-size: 20px; 
+        text-shadow: 1px 1px 20px black;
+
+    }
+    p{display: flex;
+        font-size: 15px;
+        width:420px;
+        flex-flow: row wrap;
+    }
+    button{
+        background-color: #3685FB;
+        width: 150px;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        font-size: 15px;
+        box-shadow: 1px 1px 20px black;
+    }
+    .icon1{
+        box-shadow: 1px 1px 20px black;
+        border-radius: 20px;
+        background-color: #3685FB;
+        width: 30px;
+        height: 30px;
+    }
+    .icon2{
+        box-shadow: 1px 1px 20px black;
+        border-radius: 20px;
+        background-color: #3685FB;
+        width: 30px;
+        height: 30px;
+    }
+    .icon3{
+        box-shadow: 1px 1px 20px black;
+        border-radius: 20px;
+        background-color: #3685FB;
+        width: 30px;
+        height: 30px;
+    }
+    .animation{
+        display: flex;
+        overflow: hidden;
+    }
+    .morr{
+        display: flex;
+        flex-wrap: wrap;
+        perspective: 500px;
+        position: absolute;
+        transform: rotate(45deg) translate3d(0, 0, 0);
+        top: 20%;
+        right: 45px;
+        width: 300px;
+        height: 300px;
+        border: 30px solid #3685FB;
+        background-color: aliceblue;
+        box-shadow: 1px 1px 50px black;
+    }
+    .car{display: flex;
+        flex-wrap: wrap;
+    }
+    img{width: 300px;
+        position: absolute;
+        right: -245px;
+        top: -100px;
+
+    }
+    .baz{
+        overflow: hidden;
+        width: 405px;
+        height:490px;
+        top: -100px;
+        right: -180px;
+        rotate: 135deg;
+    }
+}
